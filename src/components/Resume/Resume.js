@@ -116,7 +116,7 @@ function Resume() {
               title="School (1st to 10th Standard) in Karnataka State Secondary Education Examination Board - Dayananda Sagar Institution"
               date="1999 - 2009"
               content={[
-                ,
+                'Primary and Higher Secondry School',
               ]}
             />
 
