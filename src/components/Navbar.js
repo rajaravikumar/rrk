@@ -1,44 +1,41 @@
-import React, {useState} from 'react'
-import Navbar from 'react-bootstrap/Navbar'
-import Nav from 'react-bootstrap/Nav'
-import Container from 'react-bootstrap/Container'
-import {Link} from 'react-router-dom'
-import {
-  AiOutlineHome,
-  AiOutlineUser,
-} from 'react-icons/ai'
-import {CgFileDocument} from 'react-icons/cg'
+import React, { useState } from "react";
+import Navbar from "react-bootstrap/Navbar";
+import Nav from "react-bootstrap/Nav";
+import Container from "react-bootstrap/Container";
+import { Link } from "react-router-dom";
+import { AiOutlineHome, AiOutlineUser } from "react-icons/ai";
+import { CgFileDocument } from "react-icons/cg";
 
 function NavBar() {
-  const [expand, updateExpanded] = useState(false)
-  const [navColour, updateNavbar] = useState(false)
+  const [expand, updateExpanded] = useState(false);
+  const [navColour, updateNavbar] = useState(false);
 
   function scrollHandler() {
     if (window.scrollY >= 20) {
-      updateNavbar(true)
+      updateNavbar(true);
     } else {
-      updateNavbar(false)
+      updateNavbar(false);
     }
   }
 
-  window.addEventListener('scroll', scrollHandler)
+  window.addEventListener("scroll", scrollHandler);
 
   return (
     <Navbar
       expanded={expand}
       fixed="top"
       expand="md"
-      className={navColour ? 'sticky' : 'navbar'}
+      className={navColour ? "sticky" : "navbar"}
     >
       <Container>
         <Navbar.Brand as={Link} to="/">
           <p
             style={{
-              color: '#be50f4',
-              margin: 'auto',
-              fontWeight: '700',
-              letterSpacing: '1px',
-              fontSize: '28px',
+              color: "#be50f4",
+              margin: "auto",
+              fontWeight: "700",
+              letterSpacing: "1px",
+              fontSize: "28px",
             }}
           >
             Ravi Kumar
@@ -47,7 +44,7 @@ function NavBar() {
         <Navbar.Toggle
           aria-controls="responsive-navbar-nav"
           onClick={() => {
-            updateExpanded(expand ? false : 'expanded')
+            updateExpanded(expand ? false : "expanded");
           }}
         >
           <span></span>
@@ -58,7 +55,7 @@ function NavBar() {
           <Nav className="ml-auto" defaultActiveKey="#home">
             <Nav.Item>
               <Nav.Link as={Link} to="/" onClick={() => updateExpanded(false)}>
-                <AiOutlineHome style={{marginBottom: '2px'}} /> Home
+                <AiOutlineHome style={{ marginBottom: "2px" }} /> Home
               </Nav.Link>
             </Nav.Item>
 
@@ -68,7 +65,7 @@ function NavBar() {
                 to="/about"
                 onClick={() => updateExpanded(false)}
               >
-                <AiOutlineUser style={{marginBottom: '2px'}} /> About
+                <AiOutlineUser style={{ marginBottom: "2px" }} /> About
               </Nav.Link>
             </Nav.Item>
 
@@ -78,14 +75,14 @@ function NavBar() {
                 to="/resume"
                 onClick={() => updateExpanded(false)}
               >
-                <CgFileDocument style={{marginBottom: '2px'}} /> Resume
+                <CgFileDocument style={{ marginBottom: "2px" }} /> Resume
               </Nav.Link>
             </Nav.Item>
           </Nav>
         </Navbar.Collapse>
       </Container>
     </Navbar>
-  )
+  );
 }
 
-export default NavBar
+export default NavBar;

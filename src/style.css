@@ -10,7 +10,7 @@ html {
     rgba(17, 16, 16, 0.678),
     rgba(12, 10, 22, 0.863)
   );
-   --imp-text-color: #c770f0;
+  --imp-text-color: #c770f0;
 }
 
 .purple {
@@ -184,7 +184,7 @@ html {
 }
 
 .navbar-nav .nav-item a::after {
-  content: '';
+  content: "";
   position: relative;
   display: block;
   height: 5px;
@@ -360,7 +360,7 @@ html {
 }
 
 .home-social-icons::before {
-  content: '';
+  content: "";
   position: absolute;
   top: 0;
   left: 0;
@@ -668,7 +668,7 @@ html {
 }
 
 .resume .resume-item::before {
-  content: '';
+  content: "";
   position: absolute;
   width: 16px;
   height: 16px;
@@ -734,4 +734,20 @@ html {
 }
 .fork-btn-inner::after {
   display: none !important;
+}
+
+table {
+  font-family: "arial", sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+td,
+th {
+  text-align: left;
+  padding: 8px;
+}
+
+tr:nth-child(even) {
+  background-color: #203957;
 }
