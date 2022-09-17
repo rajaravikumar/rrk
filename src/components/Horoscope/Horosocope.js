@@ -40,7 +40,7 @@ function Horoscope() {
           </tr>
           <tr>
             <td>Caste</td>
-            <td>Gounder -Vanniya Kula Kshatriya</td>
+            <td>Gounder - Vanniya Kula Kshatriya</td>
           </tr>
           <tr>
             <td>Gothram</td>
@@ -83,7 +83,7 @@ function Horoscope() {
           <tr rowSpan="3">
             <td>Siblings</td>
             <td>
-              <li>Elder daughter married</li>
+              <li>Elder daughter married and staying in Bengaluru</li>
               <li>
                 Elder brother married - working in Honeywell as Technology Lead
                 Engineer.
@@ -105,12 +105,6 @@ function Horoscope() {
             <td>Mother Name</td>
             <td>Manjula M</td>
           </tr>
-
-          <tr>
-            <td>Mother Name</td>
-            <td>Manjula M</td>
-          </tr>
-
           <tr>
             <td>Occupation</td>
             <td>Home Maker</td>
@@ -124,7 +118,7 @@ function Horoscope() {
             <td>Address </td>
             <td>
               #39,7th Cross, Ramakrishna Nagar,J. P. Nagar Post, Bangalore
-              560078
+              560078, Karnataka, India.
             </td>
           </tr>
         </table>

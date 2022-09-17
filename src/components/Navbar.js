@@ -31,7 +31,7 @@ function NavBar() {
         <Navbar.Brand as={Link} to="/">
           <p
             style={{
-              color: "#be50f4",
+              color: "#026670",
               margin: "auto",
               fontWeight: "700",
               letterSpacing: "1px",
@@ -55,7 +55,10 @@ function NavBar() {
           <Nav className="ml-auto" defaultActiveKey="#home">
             <Nav.Item>
               <Nav.Link as={Link} to="/" onClick={() => updateExpanded(false)}>
-                <AiOutlineHome style={{ marginBottom: "2px" }} /> Home
+                <AiOutlineHome
+                  style={{ marginBottom: "2px", color: "#026670" }}
+                />{" "}
+                <font style={{ color: "black" }}>Home </font>
               </Nav.Link>
             </Nav.Item>
 
@@ -65,7 +68,10 @@ function NavBar() {
                 to="/about"
                 onClick={() => updateExpanded(false)}
               >
-                <AiOutlineUser style={{ marginBottom: "2px" }} /> About
+                <AiOutlineUser
+                  style={{ marginBottom: "2px", color: "#026670" }}
+                />{" "}
+                <font style={{ color: "black" }}>About </font>
               </Nav.Link>
             </Nav.Item>
 
@@ -75,7 +81,10 @@ function NavBar() {
                 to="/resume"
                 onClick={() => updateExpanded(false)}
               >
-                <CgFileDocument style={{ marginBottom: "2px" }} /> Resume
+                <CgFileDocument
+                  style={{ marginBottom: "2px", color: "#026670" }}
+                />{" "}
+                <font style={{ color: "black" }}>Resume </font>
               </Nav.Link>
             </Nav.Item>
           </Nav>
