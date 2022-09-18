@@ -1,6 +1,8 @@
 import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import Resumecontent from "./ResumeContent";
+import Pdf from "./../Pdf/Pdf";
+import ResumePDF from "./../../../src/Assets/Resume.pdf";
 
 function Resume() {
   return (
@@ -147,6 +149,7 @@ function Resume() {
             />
           </Col>
         </Row>
+        {/* <Pdf name="Download Resume" pdfLink={ResumePDF} /> */}
       </Container>
     </Container>
   );

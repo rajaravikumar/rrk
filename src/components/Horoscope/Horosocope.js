@@ -3,6 +3,8 @@ import { Container } from "react-bootstrap";
 import horoscopeEnglish from "../../Assets/horoscopeEnglish.png";
 import horoscopeKannnada from "../../Assets/horoscopeKannnada.png";
 import horoscopeTamil from "../../Assets/horoscopeTamil.png";
+import Pdf from "./../Pdf/Pdf";
+import HoroscopePDF from "./../../../src/Assets/Horoscope.pdf";
 
 function Horoscope() {
   return (
@@ -151,6 +153,11 @@ function Horoscope() {
           alt="Kannada Horoscope"
           className="img-fluid"
         />
+
+        <br></br>
+        <br></br>
+        <br></br>
+        <Pdf name="Download Horoscope" pdfLink={HoroscopePDF} />
       </Container>
     </Container>
   );
