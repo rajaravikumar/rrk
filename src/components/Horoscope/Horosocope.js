@@ -85,7 +85,7 @@ function Horoscope() {
           <tr rowSpan="3">
             <td>Siblings</td>
             <td>
-              <li>Elder daughter married and staying in Bengaluru</li>
+              <li>Elder sister married and staying in Bengaluru</li>
               <li>
                 Elder brother married - working in Honeywell as Technology Lead
                 Engineer.
