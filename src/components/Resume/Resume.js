@@ -149,7 +149,7 @@ function Resume() {
             />
           </Col>
         </Row>
-        <Pdf name="Download Resume" pdfLink={ResumePDF} />
+        {/* <Pdf name="Download Resume" pdfLink={ResumePDF} /> */}
       </Container>
     </Container>
   );

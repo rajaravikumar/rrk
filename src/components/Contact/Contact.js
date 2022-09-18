@@ -1,32 +1,22 @@
 import React, { useState } from "react";
 import * as emailjs from "emailjs-com";
 import "./style.css";
-import { Helmet, HelmetProvider } from "react-helmet-async";
+import { HelmetProvider } from "react-helmet-async";
 import { Container, Row, Col, Alert } from "react-bootstrap";
 
-export const ContactUs = () => {
-  const meta = {
-    title: "John Doe",
-    description:
-      "I’m John Doe data scientist _ Full stack devloper,currently working in Berlin",
-  };
-
+export const Contact = () => {
   const contactConfig = {
-    YOUR_EMAIL: "name@domain.com",
-    YOUR_FONE: "(555)123-4567",
-    description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi vehicula eu nunc et sollicitudin. Cras pulvinar, nisi at imperdiet pharetra. ",
-    // creat an emailjs.com account
-    // check out this tutorial https://www.emailjs.com/docs/examples/reactjs/
-    YOUR_SERVICE_ID: "service_id",
-    YOUR_TEMPLATE_ID: "template_id",
-    YOUR_USER_ID: "user_id",
+    YOUR_EMAIL: "ravikumar3210@gmail.com",
+    YOUR_SERVICE_ID: "service_e3s8omr",
+    YOUR_TEMPLATE_ID: "template_sov7y8b",
+    YOUR_USER_ID: "xlN1_99aN5SWZEka6",
   };
 
   const [formData, setFormdata] = useState({
     email: "",
     name: "",
     message: "",
+    phone: "",
     loading: false,
     show: false,
     alertmessage: "",
@@ -40,6 +30,7 @@ export const ContactUs = () => {
     const templateParams = {
       from_name: formData.email,
       user_name: formData.name,
+      user_phone: formData.phone,
       to_name: contactConfig.YOUR_EMAIL,
       message: formData.message,
     };
@@ -82,22 +73,20 @@ export const ContactUs = () => {
 
   return (
     <HelmetProvider>
-      <Container>
-        <Helmet>
-          <meta charSet="utf-8" />
-          <title>{meta.title} | Contact</title>
-          <meta name="description" content={meta.description} />
-        </Helmet>
-        <Row className="mb-5 mt-3">
-          <Col lg="8">
-            <h1 className="display-4 mb-4">Contact Me</h1>
-            <hr className="t_border my-4 ml-0 text-left" />
-          </Col>
-        </Row>
+      <Container
+        style={{
+          fontSize: "2.1em",
+          paddingBottom: "20px",
+          color: "black",
+          justify: "center",
+        }}
+      >
+        <h1>Get in touch</h1>
+        <br></br>
         <Row className="sec_sp">
           <Col lg="12">
             <Alert
-              //show={formData.show}
+              show={formData.show}
               variant={formData.variant}
               className={`rounded-0 co_alert ${
                 formData.show ? "d-block" : "d-none"
@@ -108,64 +97,57 @@ export const ContactUs = () => {
               <p className="my-0">{formData.alertmessage}</p>
             </Alert>
           </Col>
-          <Col lg="5" className="mb-5">
-            <h3 className="color_sec py-4">Get in touch</h3>
-            <address>
-              <strong>Email:</strong>{" "}
-              <a href={`mailto:${contactConfig.YOUR_EMAIL}`}>
-                {contactConfig.YOUR_EMAIL}
-              </a>
-              <br />
-              <br />
-              {contactConfig.hasOwnProperty("YOUR_FONE") ? (
-                <p>
-                  <strong>Phone:</strong> {contactConfig.YOUR_FONE}
-                </p>
-              ) : (
-                ""
-              )}
-            </address>
-            <p>{contactConfig.description}</p>
-          </Col>
+
           <Col lg="7" className="d-flex align-items-center">
             <form onSubmit={handleSubmit} className="contact__form w-100">
               <Row>
-                <Col lg="6" className="form-group">
-                  <input
-                    className="form-control"
-                    id="name"
-                    name="name"
-                    placeholder="Name"
-                    value={formData.name || ""}
-                    type="text"
-                    required
-                    onChange={handleChange}
-                  />
-                </Col>
-                <Col lg="6" className="form-group">
-                  <input
-                    className="form-control rounded-0"
-                    id="email"
-                    name="email"
-                    placeholder="Email"
-                    type="email"
-                    value={formData.email || ""}
-                    required
-                    onChange={handleChange}
-                  />
-                </Col>
+                <input
+                  className="form-control"
+                  id="name"
+                  name="name"
+                  placeholder="Name"
+                  value={formData.name || ""}
+                  type="text"
+                  required
+                  onChange={handleChange}
+                />
+
+                <input
+                  className="form-control rounded-0"
+                  id="email"
+                  name="email"
+                  placeholder="Email"
+                  type="email"
+                  value={formData.email || ""}
+                  required
+                  onChange={handleChange}
+                />
+
+                <input
+                  className="form-control"
+                  id="phone"
+                  name="phone"
+                  placeholder="Phone Number"
+                  value={formData.phone || ""}
+                  type="tel"
+                  pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}"
+                  required
+                  onChange={handleChange}
+                />
+
+                <textarea
+                  className="form-control rounded-0"
+                  id="message"
+                  name="message"
+                  placeholder="Message"
+                  rows="5"
+                  value={formData.message}
+                  onChange={handleChange}
+                  required
+                ></textarea>
+                <br />
               </Row>
-              <textarea
-                className="form-control rounded-0"
-                id="message"
-                name="message"
-                placeholder="Message"
-                rows="5"
-                value={formData.message}
-                onChange={handleChange}
-                required
-              ></textarea>
-              <br />
+
               <Row>
                 <Col lg="12" className="form-group">
                   <button className="btn ac_btn" type="submit">
@@ -181,3 +163,5 @@ export const ContactUs = () => {
     </HelmetProvider>
   );
 };
+
+export default Contact;

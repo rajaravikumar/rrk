@@ -2,9 +2,11 @@ import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import Techstack from "./Techstack";
 import Aboutcard from "./AboutCard";
-import laptopImg from "../../Assets/about.png";
+// import laptopImg from "../../Assets/about.png";
+import laptopImg from "../../Assets/manOnTable.svg";
 import Toolstack from "./Toolstack";
 import Osstack from "./Osstack";
+//import Contact from "./../Contact/Contact";
 
 function About() {
   return (
@@ -52,6 +54,8 @@ function About() {
           <strong className="purple">Operating System</strong> I use
         </h1>
         <Osstack />
+
+        {/* <Contact /> */}
       </Container>
     </Container>
   );
