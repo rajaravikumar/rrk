@@ -3,15 +3,9 @@ import * as emailjs from "emailjs-com";
 import "./style.css";
 import { HelmetProvider } from "react-helmet-async";
 import { Container, Row, Col, Alert } from "react-bootstrap";
+import { contactConfig } from "./../Data";
 
 export const Contact = () => {
-  const contactConfig = {
-    YOUR_EMAIL: "ravikumar3210@gmail.com",
-    YOUR_SERVICE_ID: "service_e3s8omr",
-    YOUR_TEMPLATE_ID: "template_sov7y8b",
-    YOUR_USER_ID: "xlN1_99aN5SWZEka6",
-  };
-
   const [formData, setFormdata] = useState({
     email: "",
     name: "",

@@ -13,6 +13,18 @@ p {
   color: black;
 }
 
+.button {
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  border-radius: 50%;
+  background-color: #fef9c7;
+}
+
+.button:hover {
+  box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24),
+    0 17px 50px 0 rgba(0, 0, 0, 0.19);
+  background-color: #fef9c7;
+}
+
 /* --------- */
 /*  Preloader */
 /* --------- */
@@ -23,7 +35,7 @@ p {
   width: 100%;
   height: 100%;
   z-index: 999999;
-  background-color: #FCE181;
+  background-color: #fce181;
   background-image: url(./Assets/pre.svg);
   background-repeat: no-repeat;
   background-position: center;
