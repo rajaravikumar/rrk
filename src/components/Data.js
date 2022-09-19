@@ -1,3 +1,5 @@
+import music from "./../Assets/music.mp3";
+
 export const aboutCardData = {
   name: "Ravi Kumar",
   fullName: "RAJA RAVI KUMAR",
@@ -196,5 +198,5 @@ export const horoscopeData = {
 };
 
 export const mediaUrl = {
-  pleayerURL: "https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3",
+  pleayerURL: music,
 };

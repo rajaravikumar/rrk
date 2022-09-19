@@ -5,8 +5,7 @@ import Container from "react-bootstrap/Container";
 import { Link } from "react-router-dom";
 import { AiOutlineHome, AiOutlineUser } from "react-icons/ai";
 import { CgFileDocument } from "react-icons/cg";
-import { aboutCardData, mediaUrl } from "./Data";
-import Player from "./Player/player";
+import { aboutCardData } from "./Data";
 
 function NavBar() {
   const [expand, updateExpanded] = useState(false);
@@ -43,7 +42,6 @@ function NavBar() {
             {aboutCardData.name}
           </p>
         </Navbar.Brand>
-        {/* <Player url={mediaUrl.pleayerURL} /> */}
         <Navbar.Toggle
           aria-controls="responsive-navbar-nav"
           onClick={() => {

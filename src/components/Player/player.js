@@ -2,8 +2,8 @@ import React, { useState, useEffect } from "react";
 
 const useAudio = (url) => {
   const [audio] = useState(new Audio(url));
-  const [playing, setPlaying] = useState(false);
-
+  const [playing, setPlaying] = useState(true);
+  audio.volume = 0.1;
   const toggle = () => setPlaying(!playing);
 
   useEffect(() => {
@@ -26,7 +26,7 @@ const Player = ({ url }) => {
   return (
     <div>
       <button onClick={toggle} className="button">
-        {playing ? "Play" : "Pause"}
+        {playing ? ">" : "||"}
       </button>
     </div>
   );

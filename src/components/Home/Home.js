@@ -4,9 +4,12 @@ import { Container, Row, Col } from "react-bootstrap";
 import homeLogo from "../../Assets/feelingProud.svg";
 import Home2 from "./Home2";
 import Type from "./Type";
-import YoutubeEmbed from "./../YoutubeEmbed/YoutubeEmbed";
+//import YoutubeEmbed from "./../YoutubeEmbed/YoutubeEmbed";
 import { TwitterTimelineEmbed } from "react-twitter-embed";
-import { InstagramEmbed, FacebookEmbed } from "react-social-media-embed";
+import {
+  //InstagramEmbed,
+  FacebookEmbed,
+} from "react-social-media-embed";
 import { socialMediaUrl, aboutCardData } from "./../Data";
 
 function Home() {
@@ -47,13 +50,13 @@ function Home() {
         <h1 className="project-heading">
           <TwitterTimelineEmbed
             sourceType="profile"
-            screenName={socialMediaUrl.twitterSceenName}
+            screenName="ravikumar_raja"
             options={{ height: 400 }}
           />
         </h1>
-        <h1 className="project-heading">
+        {/* <h1 className="project-heading">
           <InstagramEmbed url={socialMediaUrl.instagramEmbedUrl} />
-        </h1>
+        </h1> */}
         <h1 className="project-heading">
           <FacebookEmbed url={socialMediaUrl.facebookEmbedUrl} />
         </h1>
@@ -65,9 +68,9 @@ function Home() {
           />
         </h1>
         */}
-        <h1 className="project-heading">
+        {/* <h1 className="project-heading">
           <YoutubeEmbed embedId={socialMediaUrl.youtbeEmbedUrl} />
-        </h1>
+        </h1> */}
       </Container>
     </section>
   );
