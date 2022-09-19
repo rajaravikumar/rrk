@@ -44,7 +44,7 @@ export const socialMediaUrl = {
   facebook: "https://www.facebook.com/rajaravikumar/",
   instagram: "https://www.instagram.com/iamrajaravikumar/",
   twitter: "https://twitter.com/ravikumar_raja/",
-  email: "https://twitter.com/ravikumar_raja/",
+  email: "mailto:ravikumar3210@gmail.com",
   linkedInEmbedUrl:
     "https://www.linkedin.com/feed/update/urn:li:activity:6849090055944982528/",
   linkedInEmbedUrlPost:
