@@ -5,6 +5,7 @@ import horoscopeKannnada from "../../Assets/horoscopeKannnada.png";
 import horoscopeTamil from "../../Assets/horoscopeTamil.png";
 import Pdf from "./../Pdf/Pdf";
 import HoroscopePDF from "./../../../src/Assets/Horoscope.pdf";
+import { horoscopeData } from "./../Data";
 
 function Horoscope() {
   return (
@@ -21,16 +22,16 @@ function Horoscope() {
           <tr>
             <td>Date of Birth / Time</td>
             <td>
-              <b>24-Jan-1993 @ 8:10am</b>
+              <b>{horoscopeData.dob}</b>
             </td>
           </tr>
           <tr>
             <td>Height / Weight</td>
-            <td>5ft 5in (164cms) , 61Kg</td>
+            <td>{horoscopeData.weight}</td>
           </tr>
           <tr>
             <td>Body type/ Complexion</td>
-            <td>Slim, Whitish, Fair</td>
+            <td>{horoscopeData.color}</td>
           </tr>
           <tr>
             <td>Mother Tongue</td>
@@ -75,22 +76,19 @@ function Horoscope() {
 
           <tr>
             <td>Occupation</td>
-            <td>Software Engineer at Lowe's Companies, Inc, Bengaluru.</td>
+            <td>{horoscopeData.occupation}</td>
           </tr>
 
           <tr>
             <td>Annual Income</td>
-            <td>Rs.18-19lakh</td>
+            <td>{horoscopeData.income}</td>
           </tr>
           <tr rowSpan="3">
             <td>Siblings</td>
             <td>
-              <li>Elder sister married and staying in Bengaluru</li>
-              <li>
-                Elder brother married - working in Honeywell as Technology Lead
-                Engineer.
-              </li>
-              <li>Younger sister - working in CGI as Software Engineer.</li>
+              <li>{horoscopeData.Siblings1}</li>
+              <li>{horoscopeData.Siblings2}</li>
+              <li>{horoscopeData.Siblings3}</li>
             </td>
           </tr>
           <tr>
@@ -113,15 +111,12 @@ function Horoscope() {
           </tr>
           <tr>
             <td>Contact </td>
-            <td>+91 9342547268</td>
+            <td>{horoscopeData.contact}</td>
           </tr>
 
           <tr>
             <td>Address </td>
-            <td>
-              #39,7th Cross, Ramakrishna Nagar,J. P. Nagar Post, Bangalore
-              560078, Karnataka, India.
-            </td>
+            <td>{horoscopeData.address}</td>
           </tr>
         </table>
         <br></br>

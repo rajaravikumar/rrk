@@ -1,6 +1,7 @@
 import React from "react";
 import Card from "react-bootstrap/Card";
 import { ImPointRight } from "react-icons/im";
+import { aboutCardData } from "./../Data";
 
 function AboutCard() {
   return (
@@ -8,33 +9,35 @@ function AboutCard() {
       <Card.Body>
         <blockquote className="blockquote mb-0">
           <p>
-            Hi, I am <span className="purple">Ravi Kumar </span>
-            from <span className="purple"> Bengaluru, India.</span>
-            <br />I am a Full Stack Developer.
+            Hi, I am <span className="purple">{aboutCardData.name} </span>
+            from <span className="purple"> {aboutCardData.fromLocation}</span>
+            <br />
+            {aboutCardData.role}
             <br />
             <br />
-            Apart from coding, some other activities that I love to do!
+            {aboutCardData.anotherRole}
           </p>
           <ul>
             <li className="about-activity">
-              <ImPointRight /> Volunteer Work
+              <ImPointRight /> {aboutCardData.activity1}
             </li>
             <li className="about-activity">
-              <ImPointRight /> Reading Tech Blogs
+              <ImPointRight /> {aboutCardData.activity2}
             </li>
             <li className="about-activity">
-              <ImPointRight /> Gardening / Landscaping, DIY
+              <ImPointRight /> {aboutCardData.activity3}
             </li>
             <li className="about-activity">
-              <ImPointRight /> Watching Movies and Web Series
+              <ImPointRight /> {aboutCardData.activity4}
             </li>
           </ul>
 
           <p style={{ marginBlockEnd: 0, color: "rgb(155 126 172)" }}>
-            "Talk to yourself once in a day, otherwise you may miss meeting an
-            intelligent person in this world."{" "}
+            {aboutCardData.quote}{" "}
           </p>
-          <footer className="blockquote-footer">Swami Vivekananda</footer>
+          <footer className="blockquote-footer">
+            {aboutCardData.quoteWritten}
+          </footer>
         </blockquote>
       </Card.Body>
     </Card>

@@ -4,12 +4,13 @@ import { Container, Row, Col } from "react-bootstrap";
 import homeLogo from "../../Assets/feelingProud.svg";
 import Home2 from "./Home2";
 import Type from "./Type";
-import YoutubeEmbed from "./../YoutubeEmbed/YoutubeEmbed";
+//import YoutubeEmbed from "./../YoutubeEmbed/YoutubeEmbed";
 import { TwitterTimelineEmbed } from "react-twitter-embed";
 import {
-  InstagramEmbed,
+  //InstagramEmbed,
   FacebookEmbed,
 } from "react-social-media-embed";
+import { socialMediaUrl, aboutCardData } from "./../Data";
 
 function Home() {
   return (
@@ -30,7 +31,7 @@ function Home() {
 
               <h1 className="heading-name">
                 I'M
-                <strong className="main-name"> RAJA RAVI KUMAR</strong>
+                <strong className="main-name"> {aboutCardData.fullName}</strong>
               </h1>
 
               <div style={{ padding: 50, textAlign: "left" }}>
@@ -53,23 +54,23 @@ function Home() {
             options={{ height: 400 }}
           />
         </h1>
+        {/* <h1 className="project-heading">
+          <InstagramEmbed url={socialMediaUrl.instagramEmbedUrl} />
+        </h1> */}
         <h1 className="project-heading">
-          <InstagramEmbed url="https://www.instagram.com/p/CRMAGFzlwYh/" />
+          <FacebookEmbed url={socialMediaUrl.facebookEmbedUrl} />
         </h1>
-        <h1 className="project-heading">
-          <FacebookEmbed url="https://www.facebook.com/rajaravikumar/posts/pfbid02XkCV44jWu9budsq5pa6vjpMiTR7tZR56FZhswakm8UUEoz9A5PvvH7172WLL3ooWl" />
-        </h1>
-      {/*  
+        {/*  
         <h1 className="project-heading">
           <LinkedInEmbed
-            url="https://www.linkedin.com/feed/update/urn:li:activity:6849090055944982528/"
-            postUrl="https://www.linkedin.com/posts/raja-ravi-kumar-16623320_retail-flipkart-amazon-activity-6849090055944982528-0kxH?utm_source=share&utm_medium=member_desktop"
+            url={socialMediaUrl.linkedInEmbedUrl}
+            postUrl={socialMediaUrl.linkedInEmbedUrlPost}
           />
         </h1>
         */}
-        <h1 className="project-heading">
-          <YoutubeEmbed embedId="uLvJEQwZK2E" />
-        </h1>
+        {/* <h1 className="project-heading">
+          <YoutubeEmbed embedId={socialMediaUrl.youtbeEmbedUrl} />
+        </h1> */}
       </Container>
     </section>
   );

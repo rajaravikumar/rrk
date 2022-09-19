@@ -23,7 +23,9 @@
     "react-scripts": "^5.0.1",
     "react-social-media-embed": "^2.2.2",
     "react-tweet-embed": "^2.0.0",
+    "react-twitter-embed": "^4.0.4",
     "typewriter-effect": "^2.17.0",
+    "use-sound": "^4.0.1",
     "web-vitals": "^0.2.4"
   },
   "scripts": {
