@@ -97,7 +97,7 @@ export const resumeData = {
 
   JContent1: {
     title: "Senior Data Engineer",
-    date: "September 2022 - present",
+    date: "October 2022 - present",
     content: ["Full Stack Developer - ReactJS Project"],
   },
 
@@ -186,7 +186,7 @@ export const horoscopeData = {
   weight: "5ft 5in (164cms) , 61Kg",
   dob: "24-Jan-1993 @ 8:10am",
   color: "Slim, Whitish, Fair",
-  income: "Rs.18-19lakh",
+  income: "Rs.24lakh",
   Siblings1: "Elder sister married and staying in Bengaluru",
   Siblings2:
     "Elder brother married - working in Honeywell as Technology Lead Engineer.",
@@ -194,7 +194,7 @@ export const horoscopeData = {
   contact: "+91 9342547268",
   address:
     "#39,7th Cross, Ramakrishna Nagar,J. P. Nagar Post, Bangalore 560078, Karnataka, India.",
-  occupation: "Software Engineer at Lowe's Companies, Inc, Bengaluru.",
+  occupation: "Senior Software Engineer at Lowe's Companies, Inc, Bengaluru.",
 };
 
 export const mediaUrl = {
