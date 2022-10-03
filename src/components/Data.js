@@ -33,9 +33,9 @@ export const homeData = {
 
 export const typeWriterString = [
   "Developer",
-  "Software Engineer",
+  "Senior Software Engineer",
   "Full Stack Developer",
-  "Data Engineer",
+  "Senior Data Engineer",
 ];
 
 export const socialMediaUrl = {
@@ -67,7 +67,7 @@ export const resumeData = {
   summary:
     "Software developmen professional with 6 years of coding experience in JavaScript technologies like React.Js, C/C++ and relevant user interface technologies including HTML5/CSS, fundamentals CI/CD, Chat.Js, Node.Js and Google Cloud Platform.",
   company: "Lowe's",
-  intershipCompany: "Wechart",
+  intershipCompany: "Wechat",
   cContent1: {
     title: "Project - US Score Card",
     date: "April 2021 - present",
