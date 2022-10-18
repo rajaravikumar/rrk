@@ -65,7 +65,7 @@ export const contactConfig = {
 
 export const resumeData = {
   summary:
-    "Software developmen professional with 6 years of coding experience in JavaScript technologies like React.Js, C/C++ and relevant user interface technologies including HTML5/CSS, fundamentals CI/CD, Chat.Js, Node.Js and Google Cloud Platform.",
+    "Software Development professional with 6 years of coding experience in JavaScript technologies like React.Js, C/C++ and relevant user interface technologies including HTML5/CSS, fundamentals CI/CD, Chat.Js, Node.Js and Google Cloud Platform.",
   company: "Lowe's",
   intershipCompany: "Wechat",
   cContent1: {
@@ -186,7 +186,7 @@ export const horoscopeData = {
   weight: "5ft 5in (164cms) , 61Kg",
   dob: "24-Jan-1993 @ 8:10am",
   color: "Slim, Whitish, Fair",
-  income: "Rs.24lakh",
+  income: "Rs.25lakh",
   Siblings1: "Elder sister married and staying in Bengaluru",
   Siblings2:
     "Elder brother married - working in Honeywell as Technology Lead Engineer.",
