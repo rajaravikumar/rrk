@@ -33,9 +33,9 @@ export const homeData = {
 
 export const typeWriterString = [
   "Developer",
-  "Software Engineer",
+  "Senior Software Engineer",
   "Full Stack Developer",
-  "Data Engineer",
+  "Senior Data Engineer",
 ];
 
 export const socialMediaUrl = {
@@ -65,9 +65,9 @@ export const contactConfig = {
 
 export const resumeData = {
   summary:
-    "Software developmen professional with 6 years of coding experience in JavaScript technologies like React.Js, C/C++ and relevant user interface technologies including HTML5/CSS, fundamentals CI/CD, Chat.Js, Node.Js and Google Cloud Platform.",
+    "Software Development professional with 6 years of coding experience in JavaScript technologies like React.Js, C/C++ and relevant user interface technologies including HTML5/CSS, fundamentals CI/CD, Chat.Js, Node.Js and Google Cloud Platform.",
   company: "Lowe's",
-  intershipCompany: "Wechart",
+  intershipCompany: "Wechat",
   cContent1: {
     title: "Project - US Score Card",
     date: "April 2021 - present",
@@ -97,7 +97,7 @@ export const resumeData = {
 
   JContent1: {
     title: "Senior Data Engineer",
-    date: "September 2022 - present",
+    date: "October 2022 - present",
     content: ["Full Stack Developer - ReactJS Project"],
   },
 
@@ -186,7 +186,7 @@ export const horoscopeData = {
   weight: "5ft 5in (164cms) , 61Kg",
   dob: "24-Jan-1993 @ 8:10am",
   color: "Slim, Whitish, Fair",
-  income: "Rs.18-19lakh",
+  income: "Rs.25lakh",
   Siblings1: "Elder sister married and staying in Bengaluru",
   Siblings2:
     "Elder brother married - working in Honeywell as Technology Lead Engineer.",
@@ -194,7 +194,7 @@ export const horoscopeData = {
   contact: "+91 9342547268",
   address:
     "#39,7th Cross, Ramakrishna Nagar,J. P. Nagar Post, Bangalore 560078, Karnataka, India.",
-  occupation: "Software Engineer at Lowe's Companies, Inc, Bengaluru.",
+  occupation: "Senior Software Engineer at Lowe's Companies, Inc, Bengaluru.",
 };
 
 export const mediaUrl = {

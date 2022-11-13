@@ -6,10 +6,16 @@ import About from "./components/About/About";
 import Footer from "./components/Footer";
 import Resume from "./components/Resume/Resume";
 import Horoscope from "./components/Horoscope/Horosocope";
-import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
+import {
+  BrowserRouter as Router,
+  Route,
+  Switch,
+  HashRouter,
+} from "react-router-dom";
 import "./style.css";
 import "./App.css";
 import "bootstrap/dist/css/bootstrap.min.css";
+import { Helmet } from "react-helmet";
 import ScrollToTop from "./components/ScrollToTop";
 import ReactGA from "react-ga";
 import { TRACKING_ID } from "./components/Data";
@@ -32,7 +38,15 @@ function App() {
   }, []);
 
   return (
-    <Router>
+    <HashRouter>
+      <Helmet>
+        <title>Raja Ravi Kumar</title>
+        <meta name="description" content="RRK personal website" />
+        <meta
+          name="google-site-verification"
+          content="hSj4HfG8Q7M6RvXBgjEHt1n4lhZMfqtLtBJ2F46Fb5Y"
+        />
+      </Helmet>
       <Preloader load={load} />
       <div className="App" id={load ? "no-scroll" : "scroll"}>
         <Navbar />
@@ -45,7 +59,7 @@ function App() {
         </Switch>
         <Footer />
       </div>
-    </Router>
+    </HashRouter>
   );
 }
 

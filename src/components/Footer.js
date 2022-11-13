@@ -21,9 +21,9 @@ function Footer() {
         </Col>
         <Col md="4" className="footer-copywright">
           {" "}
-          <h3>
+{/*<h3>
             <Player url={mediaUrl.pleayerURL} />
-          </h3>
+          </h3> */}
         </Col>
         <Col md="4" className="footer-body">
           <ul className="footer-icons">
