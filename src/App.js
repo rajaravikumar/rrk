@@ -16,11 +16,14 @@ import "./style.css";
 import "./App.css";
 import "bootstrap/dist/css/bootstrap.min.css";
 import { Helmet } from "react-helmet";
-
 import ScrollToTop from "./components/ScrollToTop";
+import ReactGA from "react-ga";
+import { TRACKING_ID } from "./components/Data";
 
 function App() {
   const [load, upadateLoad] = useState(true);
+
+  ReactGA.initialize(TRACKING_ID);
 
   useEffect(() => {
     const timer = setTimeout(() => {
@@ -28,6 +31,10 @@ function App() {
     }, 1200);
 
     return () => clearTimeout(timer);
+  }, []);
+
+  useEffect(() => {
+    ReactGA.pageview(window.location.pathname + window.location.search);
   }, []);
 
   return (

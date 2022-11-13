@@ -10,6 +10,7 @@ import {
 import { FaLinkedinIn } from "react-icons/fa";
 import { aboutCardData, socialMediaUrl, mediaUrl } from "./Data";
 import Player from "./Player/player";
+import useAnalyticsEventTracker from "./useAnalyticsEventTracker";
 
 function Footer() {
   return (
