@@ -200,3 +200,5 @@ export const horoscopeData = {
 export const mediaUrl = {
   pleayerURL: music,
 };
+
+export const TRACKING_ID = "G-4EEECNLV6L"; // OUR_TRACKING_ID
