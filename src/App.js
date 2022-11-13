@@ -15,6 +15,7 @@ import {
 import "./style.css";
 import "./App.css";
 import "bootstrap/dist/css/bootstrap.min.css";
+import { Helmet } from "react-helmet";
 
 import ScrollToTop from "./components/ScrollToTop";
 
@@ -31,6 +32,14 @@ function App() {
 
   return (
     <HashRouter>
+      <Helmet>
+        <title>Raja Ravi Kumar</title>
+        <meta name="description" content="RRK personal website" />
+        <meta
+          name="google-site-verification"
+          content="hSj4HfG8Q7M6RvXBgjEHt1n4lhZMfqtLtBJ2F46Fb5Y"
+        />
+      </Helmet>
       <Preloader load={load} />
       <div className="App" id={load ? "no-scroll" : "scroll"}>
         <Navbar />
