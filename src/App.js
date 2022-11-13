@@ -6,7 +6,12 @@ import About from "./components/About/About";
 import Footer from "./components/Footer";
 import Resume from "./components/Resume/Resume";
 import Horoscope from "./components/Horoscope/Horosocope";
-import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
+import {
+  BrowserRouter as Router,
+  Route,
+  Switch,
+  HashRouter,
+} from "react-router-dom";
 import "./style.css";
 import "./App.css";
 import "bootstrap/dist/css/bootstrap.min.css";
@@ -25,7 +30,7 @@ function App() {
   }, []);
 
   return (
-    <Router>
+    <HashRouter>
       <Preloader load={load} />
       <div className="App" id={load ? "no-scroll" : "scroll"}>
         <Navbar />
@@ -38,7 +43,7 @@ function App() {
         </Switch>
         <Footer />
       </div>
-    </Router>
+    </HashRouter>
   );
 }
 
