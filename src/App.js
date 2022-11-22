@@ -5,7 +5,6 @@ import Home from "./components/Home/Home";
 import About from "./components/About/About";
 import Footer from "./components/Footer";
 import Resume from "./components/Resume/Resume";
-import Horoscope from "./components/Horoscope/Horosocope";
 import {
   BrowserRouter as Router,
   Route,
@@ -55,7 +54,6 @@ function App() {
           <Route path="/" exact component={Home} />
           <Route path="/about" component={About} />
           <Route path="/resume" component={Resume} />
-          <Route path="/horoscope" component={Horoscope} />
         </Switch>
         <Footer />
       </div>
