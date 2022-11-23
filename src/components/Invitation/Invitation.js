@@ -15,7 +15,7 @@ function Invitation() {
             <Row>
             <Col md={5} className="home-header">
               <h1 className="heading-name"  style={{ paddingBottom: 15, color: "black" }}>
-              <div className="main-name" style={{ paddingBottom: 15, fontSize: "2.1em",}}>
+              <div className="main-name" style={{ paddingBottom: 15, fontSize: "1.1em",}}>
                <spam >R</spam><spam style={{  color: "rgb(155 126 172)" }}>avi</spam>  💞 Pall<spam style={{   color: "rgb(155 126 172)" }}>avi</spam> 
               </div>
              
