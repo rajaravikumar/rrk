@@ -1,8 +1,8 @@
 {
-  "name": " Ravi Kumar",
+  "name": "Ravi Kumar",
   "short_name": "RRK",
-  "theme_color": "#2d1950",
-  "background_color": "#2d1950",
+  "theme_color": "#026670",
+  "background_color": "#026670",
   "display": "standalone",
   "scope": "/",
   "start_url": "/",
