@@ -4,8 +4,9 @@ import Nav from "react-bootstrap/Nav";
 import Container from "react-bootstrap/Container";
 import { Link } from "react-router-dom";
 import { AiOutlineHome, AiOutlineUser } from "react-icons/ai";
-import { CgFileDocument } from "react-icons/cg";
+import { CgFileDocument,  } from "react-icons/cg";
 import { aboutCardData } from "./Data";
+import { BsHeart } from "react-icons/bs";
 
 function NavBar() {
   const [expand, updateExpanded] = useState(false);
@@ -86,6 +87,19 @@ function NavBar() {
                   style={{ marginBottom: "2px", color: "#026670" }}
                 />{" "}
                 <font style={{ color: "black" }}>Resume </font>
+              </Nav.Link>
+            </Nav.Item>
+
+            <Nav.Item>
+              <Nav.Link
+                as={Link}
+                to="/invitation"
+                onClick={() => updateExpanded(false)}
+              >
+                <BsHeart
+                  style={{ marginBottom: "2px", color: "#026670" }}
+                />{" "}
+                <font style={{ color: "black" }}>Invitation </font>
               </Nav.Link>
             </Nav.Item>
           </Nav>
