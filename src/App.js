@@ -50,7 +50,7 @@ function App() {
       </Helmet> */}
       <Preloader load={load} />
       <div className="App" id={load ? "no-scroll" : "scroll"}>
-        <Navbar />
+           { window.location.pathname.includes('invitation') || window.location.hash.includes('invitation')? '' : <Navbar />}
         <ScrollToTop />
         <Switch>
           <Route path="/" exact component={Home} />
