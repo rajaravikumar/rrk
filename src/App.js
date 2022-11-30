@@ -5,7 +5,7 @@ import Home from "./components/Home/Home";
 import About from "./components/About/About";
 import Footer from "./components/Footer";
 import Resume from "./components/Resume/Resume";
-import Invitation from "./components/Invitation/Invitation";
+import Invitation from "./components/Invitation/pages/";
 import {
   BrowserRouter as Router,
   Route,
@@ -58,7 +58,8 @@ function App() {
           <Route path="/resume" component={Resume} />
           <Route path="/invitation" component={Invitation} />
         </Switch>
-        <Footer />
+       
+        { window.location.pathname.includes('invitation') || window.location.hash.includes('invitation')? '' :  <Footer />}
       </div>
     {/* </HashRouter> */} 
 </Router>

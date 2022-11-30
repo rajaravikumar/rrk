@@ -1,10 +1,10 @@
 import React, { Fragment } from 'react';
 import { Helmet } from 'react-helmet';
 import { node } from 'prop-types';
-import Favicon from '@assets/images/favicon.ico';
-import '@assets/css/icomoon.css';
-import '@assets/css/bootstrap.css';
-import '@assets/css/style.css';
+import Favicon from './../../assets/images/favicon.ico';
+import './../../assets/css/icomoon.css';
+import './../../assets/css/bootstrap.css';
+import './../../assets/css/style.css';
 
 const IMAGE_URL = ``;
 const META_DESCRIPTION = `Together with our families, we joyfully invite you to the wedding of Ravi & Pallavi. You are cordially requested to join the festive event!.`;

@@ -1,6 +1,6 @@
 import React, { Fragment } from 'react';
 import { bool } from 'prop-types';
-import LocationSection from '@components/LocationSection';
+import LocationSection from './../../components/LocationSection';
 import WeddingInfoBox from './WeddingInfoBox';
 import ButtonLive from './ButtonLive';
 import { styWrapper } from './styles';

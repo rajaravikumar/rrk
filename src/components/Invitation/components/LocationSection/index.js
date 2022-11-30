@@ -1,5 +1,5 @@
 import React, { Fragment } from 'react';
-import { GOOGLE_MAPS_LINK } from '@/constants';
+import { GOOGLE_MAPS_LINK } from './../../constants';
 import { styWrapper } from './styles';
 
 function LocationSection() {
