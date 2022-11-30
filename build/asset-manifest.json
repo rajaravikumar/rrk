@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/static/css/main.87f3fc35.css",
+    "main.js": "/static/js/main.30e6360f.js",
+    "static/js/377.f14ac583.chunk.js": "/static/js/377.f14ac583.chunk.js",
+    "static/media/rrk-profile.png": "/static/media/rrk-profile.d622c90bd34bed6076d9.png",
+    "static/media/music.mp3": "/static/media/music.15096a4451c099892518.mp3",
+    "static/media/marriage.png": "/static/media/marriage.b4363493d9db800617cc.png",
+    "service-worker.js": "/service-worker.js",
+    "static/media/manOnTable.svg": "/static/media/manOnTable.8f117eb207e57ed8f89d67d595aceb45.svg",
+    "static/media/home-bg.jpg": "/static/media/home-bg.dc52d5d40a40b13154b0.jpg",
+    "static/media/feelingProud.svg": "/static/media/feelingProud.61bf63c347fbbf181169801f21e5c20b.svg",
+    "static/media/pre.svg": "/static/media/pre.8d1a9ad1c400401aff87.svg",
+    "index.html": "/index.html",
+    "main.87f3fc35.css.map": "/static/css/main.87f3fc35.css.map",
+    "main.30e6360f.js.map": "/static/js/main.30e6360f.js.map",
+    "377.f14ac583.chunk.js.map": "/static/js/377.f14ac583.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.87f3fc35.css",
+    "static/js/main.30e6360f.js"
+  ]
+}
