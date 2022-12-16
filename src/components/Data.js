@@ -173,6 +173,7 @@ export const resumeData = {
   rContent1: {
     title: "",
     content: [
+      `Team Excellence Award - Dec 2022, Issued by Lowe's India`,
       `Team Award - Dec 2021, Issued by Lowe's India`,
       `Appreciation Store GIT - Feb 2021, Issued by Lowe's India`,
       `SPOT AWARD - June 2019, Issued by Lowe's India`,
