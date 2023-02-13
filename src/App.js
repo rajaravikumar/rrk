@@ -41,7 +41,7 @@ function App() {
 
   return (
    <Router>
-    {/* <HashRouter>
+    <HashRouter>
       <Helmet>
         <title>Raja Ravi Kumar</title>
         <meta name="description" content="RRK personal website" />
@@ -49,7 +49,7 @@ function App() {
           name="google-site-verification"
           content="hSj4HfG8Q7M6RvXBgjEHt1n4lhZMfqtLtBJ2F46Fb5Y"
         />
-      </Helmet> */}
+      </Helmet>
       <Preloader load={load} />
       <div className="App" id={load ? "no-scroll" : "scroll"}>
            { window.location.pathname.includes('invitation') || window.location.hash.includes('invitation') || window.location.pathname.includes('sangeetha') || window.location.hash.includes('sangeetha')? '' : <Navbar />}
@@ -63,7 +63,7 @@ function App() {
         </Switch>
         <Footer />
       </div>
-    {/* </HashRouter> */} 
+    </HashRouter> 
 </Router>
   );
 }
