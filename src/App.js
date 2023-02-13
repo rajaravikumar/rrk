@@ -19,6 +19,8 @@ import { Helmet } from "react-helmet";
 import ScrollToTop from "./components/ScrollToTop";
 import ReactGA from "react-ga";
 import { TRACKING_ID } from "./components/Data";
+import SangeethaHorosocope from "./components/Horoscope/SangeethaHorosocope";
+import Horosocope from "./components/Horoscope/Horosocope";
 
 function App() {
   const [load, upadateLoad] = useState(true);
@@ -50,13 +52,14 @@ function App() {
       </Helmet> */}
       <Preloader load={load} />
       <div className="App" id={load ? "no-scroll" : "scroll"}>
-           { window.location.pathname.includes('invitation') || window.location.hash.includes('invitation')? '' : <Navbar />}
+           { window.location.pathname.includes('invitation') || window.location.hash.includes('invitation') || window.location.pathname.includes('SangeethaHorosocope') || window.location.hash.includes('SangeethaHorosocope')? '' : <Navbar />}
         <ScrollToTop />
         <Switch>
           <Route path="/" exact component={Home} />
           <Route path="/about" component={About} />
           <Route path="/resume" component={Resume} />
-          <Route path="/invitation" component={Invitation} />
+          {/* <Route path="/invitation" component={Invitation} /> */}
+          <Route path="/SangeethaHorosocope" component={SangeethaHorosocope} />
         </Switch>
         <Footer />
       </div>

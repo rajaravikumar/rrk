@@ -198,6 +198,21 @@ export const horoscopeData = {
   occupation: "Senior Software Engineer at Lowe's Companies, Inc, Bengaluru.",
 };
 
+export const horoscopeSangeethaData = {
+  weight: "5ft(152.5cms) , 50Kg",
+  dob: "13-Apr-1996 @ 5:43am",
+  color: "Slim, Wheatish brown, Fair",
+  income: "Rs.4.5lakh",
+  Siblings1: "Elder sister married and staying in Bengaluru",
+  Siblings2:
+    "Elder brother married - working in Honeywell as Technology Lead Engineer.",
+  Siblings3: "Elder brother married- working in Lowe's as Senior Software Engineer.",
+  contact: "+91 9342547268",
+  address:
+    "#39,7th Cross, Ramakrishna Nagar,J. P. Nagar Post, Bangalore 560078, Karnataka, India.",
+  occupation: "Software Engineer at CGI, Bengaluru.",
+};
+
 export const mediaUrl = {
   pleayerURL: music,
 };

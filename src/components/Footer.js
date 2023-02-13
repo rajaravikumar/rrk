@@ -25,7 +25,7 @@ function Footer() {
             <Player url={mediaUrl.pleayerURL} />
           </h3> */}
         </Col>
-        <Col md="4" className="footer-body">
+        {window.location.pathname.includes('SangeethaHorosocope') || window.location.hash.includes('SangeethaHorosocope')? '' : <Col md="4" className="footer-body">
           <ul className="footer-icons">
             <li className="social-icons">
               <a
@@ -92,7 +92,7 @@ function Footer() {
               </a>
             </li>
           </ul>
-        </Col>
+        </Col>}
       </Row>
     </Container>
   );
