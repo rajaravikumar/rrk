@@ -25,7 +25,7 @@ function Footer() {
             <Player url={mediaUrl.pleayerURL} />
           </h3> */}
         </Col>
-        {window.location.pathname.includes('sangeetha') || window.location.hash.includes('sangeetha')? '' : <Col md="4" className="footer-body">
+        { window.location.hash.includes('sangeetha') ? '' : <Col md="4" className="footer-body">
           <ul className="footer-icons">
             <li className="social-icons">
               <a

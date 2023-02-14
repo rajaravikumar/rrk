@@ -39,6 +39,7 @@ function App() {
     ReactGA.pageview(window.location.pathname + window.location.search);
   }, []);
 
+ 
   return (
    <Router>
     <HashRouter>
@@ -52,7 +53,7 @@ function App() {
       </Helmet>
       <Preloader load={load} />
       <div className="App" id={load ? "no-scroll" : "scroll"}>
-           { window.location.pathname.includes('invitation') || window.location.hash.includes('invitation') || window.location.pathname.includes('sangeetha') || window.location.hash.includes('sangeetha')? '' : <Navbar />}
+           { window.location.pathname.includes('invitation') || window.location.hash.includes('invitation') || window.location.hash.includes('sangeetha') ? '' : <Navbar />}
         <ScrollToTop />
         <Switch>
           <Route path="/" exact component={Home} />
