@@ -65,7 +65,7 @@ export const contactConfig = {
 
 export const resumeData = {
   summary:
-    "Software Development professional with 6 years of coding experience in JavaScript technologies like React.Js, C/C++ and relevant user interface technologies including HTML5/CSS, fundamentals CI/CD, Chat.Js, Node.Js and Google Cloud Platform.",
+    "Software Development professional with 7 years of coding experience in JavaScript technologies like React.Js, C/C++ and relevant user interface technologies including HTML5/CSS, fundamentals CI/CD, Chat.Js, Node.Js and Google Cloud Platform.",
   company: "Lowe's",
   intershipCompany: "Wechat",
   cContent1: {
