@@ -57,9 +57,9 @@ function Home() {
         {/* <h1 className="project-heading">
           <InstagramEmbed url={socialMediaUrl.instagramEmbedUrl} />
         </h1> */}
-        <h1 className="project-heading">
+{/* <h1 className="project-heading">
           <FacebookEmbed url={socialMediaUrl.facebookEmbedUrl} />
-        </h1>
+        </h1> */}
         {/*  
         <h1 className="project-heading">
           <LinkedInEmbed
