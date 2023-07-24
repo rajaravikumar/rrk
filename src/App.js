@@ -21,6 +21,7 @@ import ReactGA from "react-ga";
 import { TRACKING_ID } from "./components/Data";
 import SangeethaHorosocope from "./components/Horoscope/SangeethaHorosocope";
 import Horosocope from "./components/Horoscope/Horosocope";
+// import { Analytics } from '@vercel/analytics/react';
 
 function App() {
   const [load, upadateLoad] = useState(true);
@@ -63,6 +64,7 @@ function App() {
           <Route path="/sangeetha" component={SangeethaHorosocope} />
         </Switch>
         <Footer />
+        {/* <Analytics debug={false} /> */}
       </div>
     </HashRouter> 
 </Router>
