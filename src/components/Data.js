@@ -35,7 +35,6 @@ export const typeWriterString = [
   "Developer",
   "Senior Software Engineer",
   "Full Stack Developer",
-  "Senior Data Engineer",
 ];
 
 export const socialMediaUrl = {
@@ -95,25 +94,31 @@ export const resumeData = {
     ],
   },
 
-  JContent1: {
+    JContent1: {
+    title: "Senior Software Engineer",
+    date: "July 2023 - present",
+    content: ["Full Stack Developer - ReactJS Project"],
+  },
+  
+  JContent2: {
     title: "Senior Data Engineer",
     date: "October 2022 - present",
     content: ["Full Stack Developer - ReactJS Project"],
   },
 
-  JContent2: {
+  JContent3: {
     title: "Data Engineer",
     date: "May 2021 - September 2022",
     content: ["Full Stack Developer - ReactJS Project"],
   },
 
-  JContent3: {
+  JContent4: {
     title: "Software Engineer",
     date: "July 2018 - May 2021",
     content: ["C/C+, ReactJS, NodeJS, GCP Project"],
   },
 
-  JContent4: {
+  JContent5: {
     title: "Associate Software Engineer",
     date: "December 2016 - July 2018",
     content: ["C/C++ Project"],
@@ -187,7 +192,7 @@ export const horoscopeData = {
   weight: "5ft 5in (164cms) , 61Kg",
   dob: "24-Jan-1993 @ 8:10am",
   color: "Slim, Whitish, Fair",
-  income: "Rs.25lakh",
+  income: "Rs.27lakh",
   Siblings1: "Elder sister married and staying in Bengaluru",
   Siblings2:
     "Elder brother married - working in Honeywell as Technology Lead Engineer.",
@@ -202,7 +207,7 @@ export const horoscopeSangeethaData = {
   weight: "5ft(152.5cms) , 50Kg",
   dob: "13-Apr-1996 @ 5:43am",
   color: "Slim, Wheatish brown, Fair",
-  income: "Rs.4.5lakh",
+  income: "Rs.5lakh",
   Siblings1: "Elder sister married and staying in Bengaluru",
   Siblings2:
     "Elder brother married - working in Honeywell as Technology Lead Engineer.",
