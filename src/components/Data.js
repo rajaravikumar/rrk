@@ -96,25 +96,25 @@ export const resumeData = {
 
     JContent1: {
     title: "Senior Software Engineer",
-    date: "July 2023 - present",
+    date: "Oct 2022 - present",
     content: ["Full Stack Developer - ReactJS Project"],
   },
   
-  JContent2: {
-    title: "Senior Data Engineer",
-    date: "October 2022 - present",
-    content: ["Full Stack Developer - ReactJS Project"],
-  },
+  // JContent2: {
+  //   title: "Senior Data Engineer",
+  //   date: "October 2022 - present",
+  //   content: ["Full Stack Developer - ReactJS Project"],
+  // },
 
-  JContent3: {
-    title: "Data Engineer",
-    date: "May 2021 - September 2022",
-    content: ["Full Stack Developer - ReactJS Project"],
-  },
+  // JContent3: {
+  //   title: "Data Engineer",
+  //   date: "May 2021 - September 2022",
+  //   content: ["Full Stack Developer - ReactJS Project"],
+  // },
 
   JContent4: {
     title: "Software Engineer",
-    date: "July 2018 - May 2021",
+    date: "July 2018 - Oct 2022",
     content: ["C/C+, ReactJS, NodeJS, GCP Project"],
   },
 
