@@ -59,11 +59,7 @@ function Resume() {
               content={resumeData.JContent3.content}
             />
 
-            <Resumecontent
-              title={resumeData.JContent4.title}
-              date={resumeData.JContent4.date}
-              content={resumeData.JContent4.content}
-            />
+           
           </Col>
 
           <Col md={6} className="resume-right">

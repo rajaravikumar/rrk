@@ -64,7 +64,7 @@ export const contactConfig = {
 
 export const resumeData = {
   summary:
-    "Software Development professional with 7 years of coding experience in JavaScript technologies like React.Js, C/C++ and relevant user interface technologies including HTML5/CSS, fundamentals CI/CD, Chat.Js, Node.Js and Google Cloud Platform.",
+    "Senior Software Engineer with 9+ years of front-end experience, specializing in React.js and JavaScript. Skilled in crafting responsive, high-performance interfaces and leading development teams. Proficient in modern front-end technologies, with a strong focus on delivering scalable, maintainable solutions.",
   company: "Lowe's",
   intershipCompany: "Wechat",
   cContent1: {
@@ -73,7 +73,7 @@ export const resumeData = {
     content: [
       "Working as a full stack developer for Data Analysis and Customer Insights (DACI) application US Score Card.",
       "US Score Card - enable operators to fully understand business performance so that they can focus on the highest value opportunities for improvement. In order to deliver on this vision, Scorecard needs to provide operators with visibility to their financial and personal performance, root cause for the drivers and draggers of performance, and surface opportunities to improve performance that are prioritized by business value. ",
-      "React.Js, Redux, React Hooks, Chat.Js, JavaScript with 2+ years experience.",
+      "React.Js, Redux, React Hooks, Chat.Js, JavaScript with 5+ years experience.",
     ],
   },
   cContent2: {
@@ -100,25 +100,14 @@ export const resumeData = {
     content: ["Full Stack Developer - ReactJS Project"],
   },
   
-  // JContent2: {
-  //   title: "Senior Data Engineer",
-  //   date: "October 2022 - present",
-  //   content: ["Full Stack Developer - ReactJS Project"],
-  // },
 
-  // JContent3: {
-  //   title: "Data Engineer",
-  //   date: "May 2021 - September 2022",
-  //   content: ["Full Stack Developer - ReactJS Project"],
-  // },
-
-  JContent4: {
+  JContent2: {
     title: "Software Engineer",
     date: "July 2018 - Oct 2022",
     content: ["C/C+, ReactJS, NodeJS, GCP Project"],
   },
 
-  JContent5: {
+  JContent3: {
     title: "Associate Software Engineer",
     date: "December 2016 - July 2018",
     content: ["C/C++ Project"],
@@ -178,6 +167,7 @@ export const resumeData = {
   rContent1: {
     title: "",
     content: [
+      `Individual Excellence Award - Feb 2025, Issued by Lowe's India`,
       `Team Excellence Award - Dec 2022, Issued by Lowe's India`,
       `Team Award - Dec 2021, Issued by Lowe's India`,
       `Appreciation Store GIT - Feb 2021, Issued by Lowe's India`,
