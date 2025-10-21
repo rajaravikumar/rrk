@@ -7,7 +7,7 @@ import App from "./App";
 import reportWebVitals from "./reportWebVitals";
 import * as serviceWorkerRegistration from "./serviceWorkerRegistration";
 
-const root = createRoot(document.getElementById('root')); // Target your root DOM element
+const root = createRoot(document.getElementById('root')); 
 root.render(
   <React.StrictMode>
     <App />
