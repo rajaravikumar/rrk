@@ -1,7 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { Link, useLocation } from "react-router-dom";
 import { AiOutlineHome, AiOutlineUser } from "react-icons/ai";
-import { CgFileDocument } from "react-icons/cg";
 import { aboutCardData } from "./Data";
 
 function NavBar() {
@@ -91,19 +90,6 @@ function NavBar() {
                 <span>About</span>
               </Link>
             </div>
-
-            {/* <div className="nav-item">
-              <Link
-                to="/resume"
-                onClick={() => updateExpanded(false)}
-                className={`nav-link ${
-                  isActive("/resume") ? "nav-link-active" : "nav-link-item"
-                }`}
-              >
-                <CgFileDocument style={{ marginBottom: "2px", marginRight: "6px" }} />
-                <span>Resume</span>
-              </Link>
-            </div> */}
           </div>
         </div>
       </div>

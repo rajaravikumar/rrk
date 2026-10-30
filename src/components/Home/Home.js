@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 import homeLogo from "../../Assets/feelingProud.svg";
 import Home2 from "./Home2";
 import Type from "./Type";
-import { FaUser, FaFileAlt, FaCode } from "react-icons/fa";
+import { FaUser, FaCode } from "react-icons/fa";
 import { aboutCardData, homeData } from "./../Data";
 
 function Home() {

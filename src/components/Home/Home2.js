@@ -12,7 +12,6 @@ import {
 import {
   FaLinkedinIn,
   FaMapMarkerAlt,
-  FaGlobe,
 } from "react-icons/fa";
 import { homeData, socialMediaUrl, aboutCardData } from "./../Data";
 

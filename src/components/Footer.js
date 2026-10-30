@@ -4,8 +4,6 @@ import { Link } from "react-router-dom";
 import {
   AiFillGithub,
   AiOutlineTwitter,
-  AiFillInstagram,
-  AiFillFacebook,
   AiOutlineMail,
 } from "react-icons/ai";
 import { FaLinkedinIn, FaGlobe } from "react-icons/fa";
@@ -19,7 +17,7 @@ function Footer() {
           <Col lg={5} md={12} className="text-center text-lg-left mb-3 mb-lg-0">
             <h3 className="footer-brand-title">{aboutCardData.fullName}</h3>
             <p className="footer-brand-sub">
-              Full Stack Developer & Software Engineer &nbsp;•&nbsp; Bengaluru, India
+              Senior Software Engineer at Lowe’s &nbsp;•&nbsp; Bengaluru, India
             </p>
           </Col>
 
@@ -28,8 +26,6 @@ function Footer() {
               <Link to="/" className="footer-nav-link">Home</Link>
               <span className="footer-link-divider">•</span>
               <Link to="/about" className="footer-nav-link">About</Link>
-              {/* <span className="footer-link-divider">•</span>
-              <Link to="/resume" className="footer-nav-link">Resume</Link> */}
             </div>
           </Col>
 

@@ -5,7 +5,6 @@ import Home from "./components/Home/Home";
 import About from "./components/About/About";
 import Footer from "./components/Footer";
 import Resume from "./components/Resume/Resume";
-import Invitation from "./components/Invitation/Invitation";
 import {
   BrowserRouter as Router,
   Route,
@@ -20,7 +19,6 @@ import ScrollToTop from "./components/ScrollToTop";
 import ReactGA from "react-ga";
 import { TRACKING_ID } from "./components/Data";
 import SangeethaHorosocope from "./components/Horoscope/SangeethaHorosocope";
-import Horosocope from "./components/Horoscope/Horosocope";
 
 function App() {
   const [load, upadateLoad] = useState(true);

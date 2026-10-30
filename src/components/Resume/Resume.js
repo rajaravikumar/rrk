@@ -5,14 +5,11 @@ import {
   FaGraduationCap,
   FaAward,
   FaCode,
-  FaPrint,
   FaLinkedinIn,
   FaGlobe,
   FaEnvelope,
   FaPhoneAlt,
   FaMapMarkerAlt,
-  FaCheck,
-  FaCopy,
   FaExternalLinkAlt,
   FaHandsHelping,
   FaLayerGroup,
@@ -27,19 +24,6 @@ import "./Resume.css";
 
 function Resume() {
   const [activeTab, setActiveTab] = useState("all");
-  const [copied, setCopied] = useState(false);
-
-  const handlePrint = () => {
-    window.print();
-  };
-
-  const handleCopyContact = () => {
-    const contactText = `${resumeData.name} | ${resumeData.title}\nPhone: ${resumeData.phone}\nEmail: ${resumeData.email}\nLinkedIn: ${resumeData.linkedin}\nWebsite: ${resumeData.website}`;
-    navigator.clipboard.writeText(contactText).then(() => {
-      setCopied(true);
-      setTimeout(() => setCopied(false), 2600);
-    });
-  };
 
   const getSkillCategoryIcon = (category) => {
     if (category.includes("Architecture")) return <FaLayerGroup />;
@@ -101,6 +85,7 @@ function Resume() {
             </a>
           </div>
 
+          {/* Quick Action Toolbar (View / Download PDF, Print, Copy Contact) */}
           {/* <div className="resume-action-bar justify-content-center mt-4">
             <a
               href={resumeData.resumePdfUrl}
@@ -115,20 +100,17 @@ function Resume() {
             <button
               type="button"
               className="resume-btn-secondary"
-              onClick={handlePrint}
               title="Print ATS-friendly Resume"
             >
-              <FaPrint /> Print
+              Print
             </button>
 
             <button
               type="button"
               className="resume-btn-secondary"
-              onClick={handleCopyContact}
               title="Copy Contact Information"
             >
-              {copied ? <FaCheck style={{ color: "#026670" }} /> : <FaCopy />}
-              {copied ? "Copied!" : "Copy Contact"}
+              Copy Contact
             </button>
           </div> */}
         </div>
@@ -437,13 +419,6 @@ function Resume() {
             <FaFilePdf /> Download Official Resume (PDF)
           </a>
         </div>
-
-        {/* Toast feedback on copy */}
-        {copied && (
-          <div className="copy-toast">
-            <FaCheck /> Contact details copied to clipboard!
-          </div>
-        )}
       </Container>
     </Container>
   );
