@@ -21,7 +21,6 @@ import ReactGA from "react-ga";
 import { TRACKING_ID } from "./components/Data";
 import SangeethaHorosocope from "./components/Horoscope/SangeethaHorosocope";
 import Horosocope from "./components/Horoscope/Horosocope";
-// import { Analytics } from '@vercel/analytics/react';
 
 function App() {
   const [load, upadateLoad] = useState(true);
@@ -40,34 +39,40 @@ function App() {
     ReactGA.pageview(window.location.pathname + window.location.search);
   }, []);
 
- 
   return (
-   <Router>
-    <HashRouter>
-      <Helmet>
-        <title>Raja Ravi Kumar</title>
-        <meta name="description" content="RRK personal website" />
-        <meta
-          name="google-site-verification"
-          content="hSj4HfG8Q7M6RvXBgjEHt1n4lhZMfqtLtBJ2F46Fb5Y"
-        />
-      </Helmet>
-      <Preloader load={load} />
-      <div className="App" id={load ? "no-scroll" : "scroll"}>
-           { window.location.pathname.includes('invitation') || window.location.hash.includes('invitation') || window.location.hash.includes('sangeetha') ? '' : <Navbar />}
-        <ScrollToTop />
-        <Switch>
-          <Route path="/" exact component={Home} />
-          <Route path="/about" component={About} />
-          <Route path="/resume" component={Resume} />
-          {/* <Route path="/invitation" component={Invitation} /> */}
-          <Route path="/sangeetha" component={SangeethaHorosocope} />
-        </Switch>
-        <Footer />
-        {/* <Analytics debug={false} /> */}
-      </div>
-    </HashRouter> 
-</Router>
+    <Router>
+      <HashRouter>
+        <Helmet>
+          <title>Raja Ravi Kumar (RRK) | Senior Software Engineer at Lowe’s</title>
+          <meta
+            name="description"
+            content="Raja Ravi Kumar (RRK) — Senior Software Engineer at Lowe’s | AI SDLC · React.js · Enterprise Analytics · Front-End Architecture"
+          />
+          <meta
+            name="google-site-verification"
+            content="hSj4HfG8Q7M6RvXBgjEHt1n4lhZMfqtLtBJ2F46Fb5Y"
+          />
+        </Helmet>
+        <Preloader load={load} />
+        <div className="App" id={load ? "no-scroll" : "scroll"}>
+          {window.location.pathname.includes("invitation") ||
+          window.location.hash.includes("invitation") ||
+          window.location.hash.includes("sangeetha") ? (
+            ""
+          ) : (
+            <Navbar />
+          )}
+          <ScrollToTop />
+          <Switch>
+            <Route path="/" exact component={Home} />
+            <Route path="/about" component={About} />
+            <Route path="/resume" component={Resume} />
+            <Route path="/sangeetha" component={SangeethaHorosocope} />
+          </Switch>
+          <Footer />
+        </div>
+      </HashRouter>
+    </Router>
   );
 }
 

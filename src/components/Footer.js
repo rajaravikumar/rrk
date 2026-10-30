@@ -1,5 +1,6 @@
 import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
+import { Link } from "react-router-dom";
 import {
   AiFillGithub,
   AiOutlineTwitter,
@@ -7,94 +8,103 @@ import {
   AiFillFacebook,
   AiOutlineMail,
 } from "react-icons/ai";
-import { FaLinkedinIn } from "react-icons/fa";
-import { aboutCardData, socialMediaUrl, mediaUrl } from "./Data";
-// import Player from "./Player/player";
-// import useAnalyticsEventTracker from "./useAnalyticsEventTracker";
+import { FaLinkedinIn, FaGlobe } from "react-icons/fa";
+import { aboutCardData, socialMediaUrl } from "./Data";
 
 function Footer() {
   return (
-    <Container fluid className="footer">
-      <Row>
-        <Col md="4" className="footer-copywright">
-          <h3>Designed and Developed by {aboutCardData.shortName}</h3>
-        </Col>
-        <Col md="4" className="footer-copywright">
-          {" "}
-{/*<h3>
-            <Player url={mediaUrl.pleayerURL} />
-          </h3> */}
-        </Col>
-        { window.location.hash.includes('sangeetha') ? '' : <Col md="4" className="footer-body">
-          <ul className="footer-icons">
-            <li className="social-icons">
-              <a
-                href={socialMediaUrl.linkedIn}
-                style={{ color: "#026670" }}
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <FaLinkedinIn />
-              </a>
-            </li>
+    <footer className="modern-footer">
+      <Container>
+        <Row className="align-items-center py-4 border-bottom border-secondary-subtle">
+          <Col lg={5} md={12} className="text-center text-lg-left mb-3 mb-lg-0">
+            <h3 className="footer-brand-title">{aboutCardData.fullName}</h3>
+            <p className="footer-brand-sub">
+              Full Stack Developer & Software Engineer &nbsp;•&nbsp; Bengaluru, India
+            </p>
+          </Col>
 
-            <li className="social-icons">
-              <a
-                href={socialMediaUrl.gitHub}
-                style={{ color: "#026670" }}
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <AiFillGithub />
-              </a>
-            </li>
+          <Col lg={4} md={6} className="text-center mb-3 mb-md-0">
+            <div className="footer-quick-links">
+              <Link to="/" className="footer-nav-link">Home</Link>
+              <span className="footer-link-divider">•</span>
+              <Link to="/about" className="footer-nav-link">About</Link>
+              {/* <span className="footer-link-divider">•</span>
+              <Link to="/resume" className="footer-nav-link">Resume</Link> */}
+            </div>
+          </Col>
 
-            <li className="social-icons">
-              <a
-                href={socialMediaUrl.facebook}
-                style={{ color: "#026670" }}
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <AiFillFacebook />
-              </a>
-            </li>
+          <Col lg={3} md={6} className="text-center text-lg-right">
+            <ul className="footer-social-icons-list mb-0">
+              <li className="footer-social-item">
+                <a
+                  href={socialMediaUrl.linkedIn}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="footer-social-btn"
+                  title="LinkedIn"
+                >
+                  <FaLinkedinIn />
+                </a>
+              </li>
 
-            <li className="social-icons">
-              <a
-                href={socialMediaUrl.instagram}
-                style={{ color: "#026670" }}
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <AiFillInstagram />
-              </a>
-            </li>
+              <li className="footer-social-item">
+                <a
+                  href={socialMediaUrl.gitHub}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="footer-social-btn"
+                  title="GitHub"
+                >
+                  <AiFillGithub />
+                </a>
+              </li>
 
-            <li className="social-icons">
-              <a
-                href={socialMediaUrl.twitter}
-                style={{ color: "#026670" }}
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <AiOutlineTwitter />
-              </a>
-            </li>
+              <li className="footer-social-item">
+                <a
+                  href={socialMediaUrl.email}
+                  className="footer-social-btn"
+                  title="Email"
+                >
+                  <AiOutlineMail />
+                </a>
+              </li>
 
-            <li className="social-icons">
-              <a
-                href={socialMediaUrl.email}
-                style={{ color: "#026670" }}
-                rel="noopener noreferrer"
-              >
-                <AiOutlineMail />
-              </a>
-            </li>
-          </ul>
-        </Col>}
-      </Row>
-    </Container>
+              <li className="footer-social-item">
+                <a
+                  href={socialMediaUrl.twitter}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="footer-social-btn"
+                  title="Twitter"
+                >
+                  <AiOutlineTwitter />
+                </a>
+              </li>
+
+              <li className="footer-social-item">
+                <a
+                  href={socialMediaUrl.website}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="footer-social-btn"
+                  title="Portfolio Website"
+                >
+                  <FaGlobe />
+                </a>
+              </li>
+            </ul>
+          </Col>
+        </Row>
+
+        <Row className="py-3">
+          <Col md={12} className="text-center">
+            <p className="footer-copyright-text mb-0">
+              Designed & Developed by <strong>{aboutCardData.shortName}</strong> &nbsp;•&nbsp; © {new Date().getFullYear()} {aboutCardData.fullName}. All rights reserved.
+            </p>
+          </Col>
+        </Row>
+      </Container>
+    </footer>
   );
 }
 

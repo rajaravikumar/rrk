@@ -1,44 +1,69 @@
 import React from "react";
 import Card from "react-bootstrap/Card";
-import { ImPointRight } from "react-icons/im";
+import {
+  FaQuoteLeft,
+  FaHandsHelping,
+  FaBookOpen,
+  FaFilm,
+  FaLeaf,
+} from "react-icons/fa";
 import { aboutCardData } from "./../Data";
 
 function AboutCard() {
-  return (
-    <Card className="quote-card-view">
-      <Card.Body>
-        <blockquote className="blockquote mb-0">
-          <p>
-            Hi, I am <span className="purple">{aboutCardData.name} </span>
-            from <span className="purple"> {aboutCardData.fromLocation}</span>
-            <br />
-            {aboutCardData.role}
-            <br />
-            <br />
-            {aboutCardData.anotherRole}
-          </p>
-          <ul>
-            <li className="about-activity">
-              <ImPointRight /> {aboutCardData.activity1}
-            </li>
-            <li className="about-activity">
-              <ImPointRight /> {aboutCardData.activity2}
-            </li>
-            <li className="about-activity">
-              <ImPointRight /> {aboutCardData.activity3}
-            </li>
-            <li className="about-activity">
-              <ImPointRight /> {aboutCardData.activity4}
-            </li>
-          </ul>
+  const activities = [
+    {
+      icon: <FaHandsHelping style={{ color: "#026670" }} />,
+      text: aboutCardData.activity1 || "Volunteer Work & Community Coordination",
+    },
+    {
+      icon: <FaBookOpen style={{ color: "#026670" }} />,
+      text: aboutCardData.activity2 || "Reading Tech Blogs",
+    },
+    {
+      icon: <FaLeaf style={{ color: "#026670" }} />,
+      text: aboutCardData.activity3 || "Gardening / Landscaping, DIY",
+    },
+    {
+      icon: <FaFilm style={{ color: "#026670" }} />,
+      text: aboutCardData.activity4 || "Watching Movies and Web Series",
+    },
+  ];
 
-          <p style={{ marginBlockEnd: 0, color: "rgb(155 126 172)" }}>
-            {aboutCardData.quote}{" "}
-          </p>
-          <footer className="blockquote-footer">
-            {aboutCardData.quoteWritten}
-          </footer>
-        </blockquote>
+  return (
+    <Card className="about-bio-card">
+      <Card.Body>
+        <div className="about-role-pill">
+          {aboutCardData.role}
+        </div>
+
+        <p className="about-bio-text mt-3">
+          Hello! I am <strong className="purple">{aboutCardData.fullName}</strong> ({aboutCardData.shortName}) based in{" "}
+          <strong className="purple">{aboutCardData.fromLocation}</strong>
+        </p>
+
+        <p className="about-bio-text">
+          {aboutCardData.summary}
+        </p>
+
+        <div className="about-activities-wrap mt-4">
+          <h4 className="about-activities-title">
+            Apart from coding, some other activities that I love to do:
+          </h4>
+          <div className="activities-pill-list">
+            {activities.map((act, index) => (
+              <div key={index} className="activity-item-pill">
+                <span className="activity-icon">{act.icon}</span>
+                <span className="activity-text">{act.text}</span>
+              </div>
+            ))}
+          </div>
+        </div>
+
+        <div className="about-quote-box mt-4">
+          <FaQuoteLeft className="quote-icon" />
+          <p className="quote-text">{aboutCardData.quote}</p>
+          <div className="quote-author">— {aboutCardData.quoteWritten}</div>
+        </div>
       </Card.Body>
     </Card>
   );
