@@ -416,7 +416,7 @@ function Resume() {
             className="resume-btn-primary"
             style={{ display: "inline-flex" }}
           >
-            <FaFilePdf /> Download Official Resume (PDF)
+            <FaFilePdf /> Download Resume (PDF)
           </a>
         </div>
       </Container>

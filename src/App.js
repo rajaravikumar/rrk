@@ -9,7 +9,6 @@ import {
   BrowserRouter as Router,
   Route,
   Switch,
-  HashRouter,
 } from "react-router-dom";
 import "./style.css";
 import "./App.css";
@@ -39,37 +38,34 @@ function App() {
 
   return (
     <Router>
-      <HashRouter>
-        <Helmet>
-          <title>Raja Ravi Kumar (RRK) | Senior Software Engineer at Lowe’s</title>
-          <meta
-            name="description"
-            content="Raja Ravi Kumar (RRK) — Senior Software Engineer at Lowe’s | AI SDLC · React.js · Enterprise Analytics · Front-End Architecture"
-          />
-          <meta
-            name="google-site-verification"
-            content="hSj4HfG8Q7M6RvXBgjEHt1n4lhZMfqtLtBJ2F46Fb5Y"
-          />
-        </Helmet>
-        <Preloader load={load} />
-        <div className="App" id={load ? "no-scroll" : "scroll"}>
-          {window.location.pathname.includes("invitation") ||
-          window.location.hash.includes("invitation") ||
-          window.location.hash.includes("sangeetha") ? (
-            ""
-          ) : (
-            <Navbar />
-          )}
-          <ScrollToTop />
-          <Switch>
-            <Route path="/" exact component={Home} />
-            <Route path="/about" component={About} />
-            <Route path="/resume" component={Resume} />
-            <Route path="/sangeetha" component={SangeethaHorosocope} />
-          </Switch>
-          <Footer />
-        </div>
-      </HashRouter>
+      <Helmet>
+        <title>Raja Ravi Kumar (RRK) | Senior Software Engineer at Lowe’s</title>
+        <meta
+          name="description"
+          content="Raja Ravi Kumar (RRK) — Senior Software Engineer at Lowe’s | AI SDLC · React.js · Enterprise Analytics · Front-End Architecture"
+        />
+        <meta
+          name="google-site-verification"
+          content="hSj4HfG8Q7M6RvXBgjEHt1n4lhZMfqtLtBJ2F46Fb5Y"
+        />
+      </Helmet>
+      <Preloader load={load} />
+      <div className="App" id={load ? "no-scroll" : "scroll"}>
+        {window.location.pathname.includes("invitation") ||
+        window.location.pathname.includes("sangeetha") ? (
+          ""
+        ) : (
+          <Navbar />
+        )}
+        <ScrollToTop />
+        <Switch>
+          <Route path="/" exact component={Home} />
+          <Route path="/about" component={About} />
+          <Route path="/resume" component={Resume} />
+          <Route path="/sangeetha" component={SangeethaHorosocope} />
+        </Switch>
+        <Footer />
+      </div>
     </Router>
   );
 }
