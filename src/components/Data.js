@@ -1,5 +1,3 @@
-import music from "./../Assets/music.mp3";
-
 export const aboutCardData = {
   name: "Raja Ravi Kumar",
   fullName: "RAJA RAVI KUMAR",

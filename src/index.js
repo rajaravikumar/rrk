@@ -17,4 +17,4 @@ root.render(
 // to log results (for example: reportWebVitals(console.log))
 reportWebVitals();
 
-serviceWorkerRegistration.register();
+serviceWorkerRegistration.unregister();

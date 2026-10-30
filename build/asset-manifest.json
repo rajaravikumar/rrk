@@ -1,31 +1,21 @@
 {
   "files": {
-    "main.css": "/static/css/main.43129fd5.css",
-    "main.js": "/static/js/main.214dfcfc.js",
-    "static/js/377.a72c73c1.chunk.js": "/static/js/377.a72c73c1.chunk.js",
+    "main.css": "/static/css/main.99b8ce71.css",
+    "main.js": "/static/js/main.19c66e01.js",
+    "static/js/385.4528f092.chunk.js": "/static/js/385.4528f092.chunk.js",
     "static/media/rrk-profile.png": "/static/media/rrk-profile.d622c90bd34bed6076d9.png",
     "static/media/music.mp3": "/static/media/music.15096a4451c099892518.mp3",
-    "static/media/horoscopeTamil.png": "/static/media/horoscopeTamil.012e341d7653a4ae79b8.png",
     "static/media/horoscopeSangeethaEnglish.png": "/static/media/horoscopeSangeethaEnglish.820c29ecbe3493c591f9.png",
     "static/media/horoscopeSangeethaKannada.png": "/static/media/horoscopeSangeethaKannada.2ba3f95a7d8ae3781b48.png",
-    "static/media/horoscopeKannnada.png": "/static/media/horoscopeKannnada.ddbc76aaf7e2e3a99e07.png",
     "static/media/horoscopeSangeethaTamil.png": "/static/media/horoscopeSangeethaTamil.93bbcd80b34bc814856d.png",
-    "static/media/horoscopeEnglish.png": "/static/media/horoscopeEnglish.a59e154969f896d8322e.png",
     "static/media/HoroscopeSangeethaPDF.pdf": "/static/media/HoroscopeSangeethaPDF.c3802c7188f4d10b444f.pdf",
-    "static/media/Horoscope.pdf": "/static/media/Horoscope.07d89d5fc08ba3a682be.pdf",
-    "static/media/marriage.png": "/static/media/marriage.b4363493d9db800617cc.png",
-    "service-worker.js": "/service-worker.js",
     "static/media/manOnTable.svg": "/static/media/manOnTable.8f117eb207e57ed8f89d67d595aceb45.svg",
-    "static/media/home-bg.jpg": "/static/media/home-bg.dc52d5d40a40b13154b0.jpg",
+    "service-worker.js": "/service-worker.js",
     "static/media/feelingProud.svg": "/static/media/feelingProud.61bf63c347fbbf181169801f21e5c20b.svg",
-    "static/media/pre.svg": "/static/media/pre.8d1a9ad1c400401aff87.svg",
-    "index.html": "/index.html",
-    "main.43129fd5.css.map": "/static/css/main.43129fd5.css.map",
-    "main.214dfcfc.js.map": "/static/js/main.214dfcfc.js.map",
-    "377.a72c73c1.chunk.js.map": "/static/js/377.a72c73c1.chunk.js.map"
+    "index.html": "/index.html"
   },
   "entrypoints": [
-    "static/css/main.43129fd5.css",
-    "static/js/main.214dfcfc.js"
+    "static/css/main.99b8ce71.css",
+    "static/js/main.19c66e01.js"
   ]
 }
