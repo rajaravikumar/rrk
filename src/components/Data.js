@@ -495,7 +495,7 @@ export const horoscopeSangeethaData = {
 };
 
 export const mediaUrl = {
-  pleayerURL: music,
+  pleayerURL: "",
 };
 
 export const TRACKING_ID = "G-4EEECNLV6L";
